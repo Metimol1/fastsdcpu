@@ -19,8 +19,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
-RUN chmod +x install.sh start.sh start-webui.sh
-
 RUN ./install.sh
 
-CMD ["./start-webui.sh"]
+RUN ./start-webui.sh
