@@ -23,4 +23,6 @@ COPY . .
 RUN pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu && \
     pip install -r requirements.txt
 
+EXPOSE 7860
+
 CMD ["python3", "src/app.py", "-w"]
