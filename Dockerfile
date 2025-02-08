@@ -19,6 +19,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
-RUN ./install.sh
+RUN bash install.sh
 
-RUN ./start-webui.sh
+RUN bash start-webui.sh
