@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
-RUN bash install.sh
+RUN pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu && \
+    pip install -r requirements.txt
 
 RUN bash start-webui.sh
