@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     tcl8.6-dev \
     tk8.6-dev \
     python3-tk \
+    libgl1-mesa-glx \
     && rm -rf /var/lib/apt/lists/*
 
 COPY . .
