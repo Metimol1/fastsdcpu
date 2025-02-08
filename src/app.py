@@ -15,6 +15,9 @@ from state import get_context, get_settings
 from utils import show_system_info
 from backend.device import get_device_name
 
+import warnings
+warnings.filterwarnings("ignore")
+
 parser = ArgumentParser(description=f"FAST SD CPU {constants.APP_VERSION}")
 parser.add_argument(
     "-s",
